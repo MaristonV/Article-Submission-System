@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<title></title>
+</head>
+<body>
+	<div class="container">
+		<form>
+		<table class="table">
+			<thead class="thead-dark">
+				<tr>
+					<th scope="col">Id Artigo</th>
+					<th scope="col">Artigo</th>
+					<th scope="col">Prazo</th>
+					<th scope="col">Nota</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">1</th>
+					<td><a href="#" data-toggle="modal" data-target="#Modal">Link do Artigo</a></td>
+					<td>3 Dias</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<th scope="row">2</th>
+					<td><a href="#" data-toggle="modal" data-target="#Modal">Link do Artigo</a></td>
+					<td>2 Dias</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<th scope="row">3</th>
+					<td><a href="#" data-toggle="modal" data-target="#Modal">Link do Artigo</a></td>
+					<td>1 Dia</td>
+					<td>Aguardando Revisão</td>
+				</tr>
+			</tbody>
+		</table>
+		</form>
+	</div>
+	<div class="modal fade bd-example-modal-lg" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="Artigo">Letura do Artigo ...</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="embed-responsive embed-responsive-21by9">
+							<iframe class="embed-responsive-item" src="..."></iframe>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+						<label class="form-check-label" for="inlineRadio1">1</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+						<label class="form-check-label" for="inlineRadio2">2</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+						<label class="form-check-label" for="inlineRadio3">3</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+						<label class="form-check-label" for="inlineRadio4">4</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+						<label class="form-check-label" for="inlineRadio5">5</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6">
+						<label class="form-check-label" for="inlineRadio6">6</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio7" value="option7">
+						<label class="form-check-label" for="inlineRadio7">7</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio8" value="option8">
+						<label class="form-check-label" for="inlineRadio8">8</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio9" value="option9">
+						<label class="form-check-label" for="inlineRadio9">9</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio10" value="option10">
+						<label class="form-check-label" for="inlineRadio10">10</label>
+					</div>
+					<button type="button" class="btn btn-primary">Avaliar</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+				</div>
+</body>
+</html>
