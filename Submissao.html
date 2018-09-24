@@ -32,8 +32,7 @@
 							<label class="btn btn-primary">
 						    <input type="checkbox" checked autocomplete="off"> +
 						  </label>
-						</div>		
-						<br>							
+						</div>									
 				<script type="text/javascript">
 					$('.btn-group-toggle').click(function(e){
 						var f = $(this).parent(),
@@ -46,9 +45,29 @@
 					<label for="uploadArtigo">Upload de Artigo</label>
 					<input type="file" class="form-control-file" id="InputArtigo">
 				</div>  
-				<button type="button" class="btn btn-primary" on>Enviar Artigo</button>
+				<button type="button" class="btn btn-primary" >Enviar Artigo</button>
 			</form>
 		</fieldset>
 	</div>
+	<div div class="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog "" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="Artigo">Comfirmação de Inscri~ção</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="embed-responsive embed-responsive-21by9">
+							<iframe class="embed-responsive-item" src="102.pdf"></iframe>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">					
+					<button type="button" class="btn btn-primary">Imprimir</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+				</div>
 </body>
 </html>
