@@ -9,68 +9,46 @@
 </head>
 <body>
 	<div class="container" style="width: 600px;height: 900px;padding-top: 80px ">
-	    <fieldset>
-	    	<legend>	    		
-				 Submissao de Artigos	
-	    	</legend>
-			<form>
-			  <div class="form-row">
-			  	<div class="form-group col-md-6">
-			  		<label for="inputAutor1">Nome do Autor 1</label>
-			  		<input type="text" class="form-control" id="autor1" required>
-			  	</div>
-			  	<div class="form-group col-md-6">
-			  		<label for="inputEmail1">Email do Autor</label>
-			  		<input type="email" class="form-control" id="email1" required>
-			  	</div>
-			  </div>
-			  <div class="form-row">
-			  	<div class="form-group col-md-6">
-			  		<label for="inputAutor2">Nome do Autor 2</label>
-			  		<input type="text" class="form-control" id="autor2"required>
-			  	</div>
-			  	<div class="form-group col-md-6">
-			  		<label for="inputEmail2">Email do Autor</label>
-			  		<input type="email" class="form-control" id="email2" required>
-			  	</div>
-			  </div>
-			  <div class="form-row">
-			  	<div class="form-group col-md-6">
-			  		<label for="inputAutor3">Nome do Autor 3</label>
-			  		<input type="text" class="form-control" id="autor3"required>
-			  	</div>
-			  	<div class="form-group col-md-6">
-			  		<label for="inputEmail3">Email do Autor</label>
-			  		<input type="email" class="form-control" id="email3" required>
-			  	</div>
-			  </div>
-			  <div class="form-row">
-			  	<div class="form-group col-md-6">
-			  		<label for="inputAutor4">Nome do Autor 1</label>
-			  		<input type="text" class="form-control" id="autor4">
-			  	</div>
-			  	<div class="form-group col-md-6">
-			  		<label for="inputEmail4">Email do Autor</label>
-			  		<input type="email" class="form-control" id="email4" >
-			  	</div>
-			  </div>
-			  <div class="form-row">
-			  	<div class="form-group col-md-6">
-			  		<label for="inputEmail5">Nome do Autor 1</label>
-			  		<input type="text" class="form-control" id="autor5">
-			  	</div>
-			  	<div class="form-group col-md-6">
-			  		<label for="inputEmail5">Email do Autor</label>
-			  		<input type="email" class="form-control" id="email5" >
-			  	</div>
-			  </div>
-			  <div class="form-group">
-			  	<label for="uploadArtigo">Upload de Artigo</label>
-			  	<input type="file" class="form-control-file" id="InputArtigo">
-			  </div>  
-			<button type="button" class="btn btn-primary">Enviar Artigo</button>
+		<fieldset>
+			<legend>	    		
+				Submissao de Artigos	
+			</legend>
+			<form action="teste.html" method="POST" >
+				<div class="alert alert-primary">
+					A quantidade Minima de Autores são 3, máximo 5
+				</div>
+				<div><!-- ESSA DIV QUE VAI SER COPIADA-->
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="inputAutor1">Nome do Autor </label>
+							<input type="text" class="form-control" id="autor1" required>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="inputEmail1">Email do Autor</label>
+							<input type="email" class="form-control" id="email1" required>
+						</div>
+					</div>
+						<div class="btn-group-toggle" data-toggle="buttons">
+							<label class="btn btn-primary">
+						    <input type="checkbox" checked autocomplete="off"> +
+						  </label>
+						</div>		
+						<br>							
+				<script type="text/javascript">
+					$('.btn-group-toggle').click(function(e){
+						var f = $(this).parent(),
+						c = f.clone(true,true);
+						c.insertAfter(f);
+					});
+				</script>
+				</div><!---->
+				<div class="form-group">
+					<label for="uploadArtigo">Upload de Artigo</label>
+					<input type="file" class="form-control-file" id="InputArtigo">
+				</div>  
+				<button type="button" class="btn btn-primary" on>Enviar Artigo</button>
 			</form>
-	</fieldset>
-</div>
+		</fieldset>
+	</div>
 </body>
 </html>
